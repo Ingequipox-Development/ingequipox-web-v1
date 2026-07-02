@@ -12,6 +12,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/ingequipox-web-v1/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
