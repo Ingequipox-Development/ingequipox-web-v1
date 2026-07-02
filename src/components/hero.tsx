@@ -8,7 +8,7 @@ export function Hero() {
     >
       {/* Imagen de fondo */}
       <img
-        src="/hero-water.png"
+        src={`${import.meta.env.BASE_URL}hero-water.png`}
         alt="Planta de tratamiento de agua vista desde el aire"
         className="absolute inset-0 h-full w-full object-cover"
       />

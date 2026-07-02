@@ -1,23 +1,25 @@
 import { MapPin, ArrowUpRight } from "lucide-react"
 
+const base = import.meta.env.BASE_URL
+
 const projects = [
   {
     name: "PTAR Yotoco",
     location: "Valle del Cauca",
     category: "Planta de tratamiento",
-    image: "/project-yotoco.png",
+    image: `${base}project-yotoco.png`,
   },
   {
     name: "Estación de Bombeo Santa Marta",
     location: "Magdalena",
     category: "Estaciones de bombeo",
-    image: "/project-santamarta.png",
+    image: `${base}project-santamarta.png`,
   },
   {
     name: "Aeropuerto El Dorado",
     location: "Bogotá D.C.",
     category: "Gestión hídrica",
-    image: "/project-eldorado.png",
+    image: `${base}project-eldorado.png`,
   },
 ]
 
