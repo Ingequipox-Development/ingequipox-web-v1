@@ -10,7 +10,7 @@ const projects = [
     name: "PTAR Yotoco",
     location: "Valle del Cauca",
     category: "Planta de tratamiento",
-    images: [`${base}project-yotoco.png`],
+    images: [`${base}project-yotoco.png`, `${base}servicios.jpg`, `${base}p1.jpg`, `${base}p2.jpeg`],
     shortDesc: "Diseño, construcción y optimización de la Planta de Tratamiento de Aguas Residuales.",
     detail: "Este proyecto optimiza la remoción de carga contaminante en el municipio mediante reactores avanzados y sistemas de aireación de alta eficiencia, asegurando el cumplimiento estricto de las normativas ambientales colombianas."
   },
