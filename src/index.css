@@ -56,11 +56,23 @@
 
 :root {
   color-scheme: light;
-  --navy-deep: oklch(0.22 0.05 255);
-  --navy: oklch(0.28 0.06 255);
+  --navy-deep: #091b31;
+  --navy: #132946;
   --navy-light: oklch(0.4 0.07 255);
-  --green: oklch(0.78 0.19 150);
-  --green-dark: oklch(0.68 0.18 150);
+  /* Colores Base del proyecto */
+
+  /* version original */
+  /* --green: #40d872 */
+  /* --green-dark: #36bc64 */
+
+  /* version corporativa */
+  /* --green: #a4cf39 */
+  /* --green-dark: #8bc31f */
+
+  /* version intermedia - recomendada */
+  --green: #72d456;
+  --green-dark: #57b53e;
+
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -93,6 +105,35 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+}
+
+/* Estilos personalizados para la barra de desplazamiento (Scrollbar) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  /* Hace la barra más delgada */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  /* Fondo transparente */
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(166, 206, 58, 0.3);
+  /* Verde corporativo sutil */
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(166, 206, 58, 0.7);
+  /* Verde más fuerte al pasar el mouse */
+}
+
+/* Compatibilidad para Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(166, 206, 58, 0.5) transparent;
 }
 
 /* .dark block and @media prefers-color-scheme: dark removed — light mode forced */

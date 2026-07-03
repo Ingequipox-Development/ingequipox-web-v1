@@ -13,23 +13,23 @@ import {
 const services = [
   {
     icon: PencilRuler,
-    title: "Ingeniería",
-    text: "Diseño y consultoría especializada en sistemas de tratamiento, redes hidráulicas y estudios ambientales, con enfoque en eficiencia y cumplimiento normativo.",
+    title: "Operación y mantenimiento de plantas",
+    text: "Contamos con personal calificado para realizar programas de mantenimiento con el fin de prever y corregir problemas en la operación de las plantas de tratamiento.",
   },
   {
     icon: Factory,
-    title: "Operación de Plantas",
-    text: "Puesta en marcha, operación y mantenimiento de plantas de tratamiento de agua potable y residual, garantizando la calidad del recurso hídrico.",
+    title: "Modernización y ampliación de plantas",
+    text: "Servicio de optimización y ampliación de cada uno de los procesos que integran una planta de tratamiento de agua.",
   },
   {
     icon: Gauge,
-    title: "Estaciones de Bombeo",
-    text: "Construcción y automatización de estaciones de bombeo de alta eficiencia energética, diseñadas para una operación confiable y continua.",
+    title: "Tratamiento de aguas",
+    text: "Tratamiento de agua potable, residual, industrial y agua para sistemas de enfriamiento y generación de vapor.",
   },
   {
     icon: Waves,
-    title: "Acueductos",
-    text: "Desarrollo integral de acueductos y redes de conducción que llevan agua segura a comunidades y ciudades de forma sostenible.",
+    title: "Ingeniería y construcción",
+    text: "Diseño e ingeniería de detalle de sistemas para tratamiento de aguas. Construcción de obras civiles, eléctricas y mecánicas.",
   },
 ]
 
@@ -37,11 +37,11 @@ export function Experience() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section id="experiencia" className="bg-background py-24 lg:py-32">
+    <section id="experiencia" className="bg-background py-16 lg:py-32 lg:pb-20">
       <div className="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
         {/* Columna izquierda: texto */}
         <div className="lg:pt-6">
-          <span className="text-sm font-semibold uppercase tracking-wider text-green-dark">
+          <span className="text-xl font-semibold uppercase tracking-wider text-green-dark">
             Nuestra experiencia
           </span>
           <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-navy sm:text-4xl">
@@ -60,7 +60,7 @@ export function Experience() {
 
           <div className="mt-8 flex items-center gap-6 border-t border-border pt-8">
             <div>
-              <div className="text-3xl font-semibold text-navy">98%</div>
+              <div className="text-3xl font-semibold text-navy">100%</div>
               <p className="text-sm text-muted-foreground">
                 Satisfacción de clientes
               </p>
@@ -82,11 +82,10 @@ export function Experience() {
             return (
               <div
                 key={service.title}
-                className={`rounded-2xl border transition-colors ${
-                  isOpen
-                    ? "border-navy/15 bg-navy text-white"
-                    : "border-border bg-card"
-                }`}
+                className={`rounded-2xl border transition-colors ${isOpen
+                  ? "border-navy/15 bg-navy text-white"
+                  : "border-border bg-card"
+                  }`}
               >
                 <button
                   type="button"
@@ -95,16 +94,14 @@ export function Experience() {
                   aria-expanded={isOpen}
                 >
                   <span
-                    className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${
-                      isOpen ? "bg-green text-navy-deep" : "bg-navy/5 text-navy"
-                    }`}
+                    className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${isOpen ? "bg-green text-navy-deep" : "bg-navy/5 text-navy"
+                      }`}
                   >
                     <service.icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <span
-                    className={`flex-1 text-lg font-semibold ${
-                      isOpen ? "text-white" : "text-navy"
-                    }`}
+                    className={`flex-1 text-lg font-semibold ${isOpen ? "text-white" : "text-navy"
+                      }`}
                   >
                     {service.title}
                   </span>
@@ -121,11 +118,10 @@ export function Experience() {
                   </span>
                 </button>
                 <div
-                  className={`grid transition-all duration-300 ${
-                    isOpen
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0"
-                  }`}
+                  className={`grid transition-all duration-300 ${isOpen
+                    ? "grid-rows-[1fr] opacity-100"
+                    : "grid-rows-[0fr] opacity-0"
+                    }`}
                 >
                   <div className="overflow-hidden">
                     <p className="px-5 pb-6 pl-20 text-sm leading-relaxed text-white/70 lg:px-6 lg:pl-[5.5rem]">

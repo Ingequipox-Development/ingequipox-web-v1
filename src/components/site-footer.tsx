@@ -1,4 +1,4 @@
-import { Droplets, Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
 
 export function SiteFooter() {
   return (
@@ -7,12 +7,12 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-green text-navy-deep">
-                <Droplets className="h-5 w-5" aria-hidden="true" />
-              </span>
-              <span className="text-lg font-semibold text-white">
-                Ingequipox
-              </span>
+              {/* Logo insertado con la misma lógica de rutas de Vite */}
+              <img
+                src={`${import.meta.env.BASE_URL}logo-white.png`}
+                alt="Logo Ingequipox"
+                className="h-12 md:h-16 w-auto"
+              />
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed">
               Firma de ingeniería ambiental especializada en soluciones
@@ -23,10 +23,10 @@ export function SiteFooter() {
           <div>
             <h3 className="text-sm font-semibold text-white">Servicios</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li>Ingeniería</li>
-              <li>Operación de Plantas</li>
-              <li>Estaciones de Bombeo</li>
-              <li>Acueductos</li>
+              <li>Operación y mantenimiento de plantas</li>
+              <li>Modernización y ampliación de plantas</li>
+              <li>Tratamiento de aguas</li>
+              <li>Ingeniería y construcción</li>
             </ul>
           </div>
 
@@ -37,7 +37,7 @@ export function SiteFooter() {
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-green" aria-hidden="true" />
                 <a
                   href="mailto:direcciondeproyectos@ingequipox.com.co"
-                  className="break-all transition-colors hover:text-green"
+                  className="transition-colors hover:text-green"
                 >
                   direcciondeproyectos@ingequipox.com.co
                 </a>
@@ -59,9 +59,9 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6 text-sm">
+        <div className="mt-12 border-t border-white/10 pt-6 text-sm text-center">
           <p>
-            &copy; {new Date().getFullYear()} Ingequipox. Todos los derechos
+            &copy; {new Date().getFullYear()} Ingequipox SAS ESP. Todos los derechos
             reservados.
           </p>
         </div>

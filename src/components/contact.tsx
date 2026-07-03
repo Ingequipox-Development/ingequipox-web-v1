@@ -13,10 +13,10 @@ export function Contact() {
   }
 
   return (
-    <section id="contacto" className="bg-muted py-24 lg:py-32">
+    <section id="contacto" className="bg-muted py-16 lg:py-24">
       <div className="mx-auto grid max-w-6xl gap-14 px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
         <div>
-          <span className="text-sm font-semibold uppercase tracking-wider text-green-dark">
+          <span className="text-xl font-semibold uppercase tracking-wider text-green-dark">
             Hablemos
           </span>
           <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight text-navy sm:text-4xl">

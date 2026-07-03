@@ -5,6 +5,8 @@ import { Experience } from "@/components/experience"
 import { Projects } from "@/components/projects"
 import { Contact } from "@/components/contact"
 import { SiteFooter } from "@/components/site-footer"
+import { AboutUs } from "@/components/about"
+import { Clients } from "@/components/clients"
 
 export default function App() {
   return (
@@ -13,7 +15,9 @@ export default function App() {
       <Hero />
       <StatsBar />
       <Experience />
+      <Clients />
       <Projects />
+      <AboutUs />
       <Contact />
       <SiteFooter />
     </main>
