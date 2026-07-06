@@ -33,7 +33,7 @@ export function Clients() {
                             <img
                                 src={client.logo}
                                 alt={`Logo de ${client.name}`}
-                                className="max-h-full max-w-full object-contain opacity-50 filter transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110"
+                                className="max-h-full max-w-full object-contain filter transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110"
                             />
                         </div>
                     ))}

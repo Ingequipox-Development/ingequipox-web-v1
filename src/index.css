@@ -61,16 +61,20 @@
   --navy-light: oklch(0.4 0.07 255);
   /* Colores Base del proyecto */
 
-  /* version original */
+  /* version original (llamativo pero muy diferente al original) */
   /* --green: #40d872 */
   /* --green-dark: #36bc64 */
 
-  /* version corporativa */
+  /* version corporativa (muy amarillo) */
   /* --green: #a4cf39 */
   /* --green-dark: #8bc31f */
 
-  /* version intermedia - recomendada */
-  --green: #72d456;
+  /* version intermedia - recomendada (pero no coincide mucho con el color del logo) */
+  /* --green: #72d456 */
+  /* --green-dark: #57b53e */
+
+  /* version corporativa corregida */
+  --green: #8bd248;
   --green-dark: #57b53e;
 
   --background: oklch(1 0 0);
