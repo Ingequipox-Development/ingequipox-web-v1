@@ -1,11 +1,11 @@
 export function Clients() {
     const clients = [
-        { name: "Almacafé", logo: `${import.meta.env.BASE_URL}logo_almacafe.png` },
-        { name: "Atesa de Occidente", logo: `${import.meta.env.BASE_URL}logo_artesa.png` },
-        { name: "Consorcio Viaducto", logo: `${import.meta.env.BASE_URL}logo_consorcio.png` },
-        { name: "Aeropuerto El Dorado", logo: `${import.meta.env.BASE_URL}logo_el_dorado.png` },
-        { name: "Interaseo", logo: `${import.meta.env.BASE_URL}logo_intesareo.jpg` },
-        { name: "Operadores de la Sierra", logo: `${import.meta.env.BASE_URL}logo_operador_sierra.jpg` },
+        { name: "Almacafé", logo: `${import.meta.env.BASE_URL}/clients/logo_almacafe.png` },
+        { name: "Atesa de Occidente", logo: `${import.meta.env.BASE_URL}/clients/logo_artesa.png` },
+        { name: "Alcaldia de Cienaga", logo: `${import.meta.env.BASE_URL}/clients/logo-alcaldia-cienaga.png` },
+        { name: "Alcaldia de Cali", logo: `${import.meta.env.BASE_URL}/clients/logo-alcaldia-cali.png` },
+        { name: "Interaseo", logo: `${import.meta.env.BASE_URL}/clients/logo_intesareo.png` },
+        { name: "Operadores de la Sierra", logo: `${import.meta.env.BASE_URL}/clients/logo_operador_sierra.png` },
     ]
 
     return (
@@ -18,7 +18,7 @@ export function Clients() {
                     <h2 className="text-xl font-bold uppercase tracking-wider text-green-dark">
                         Casos de Éxito
                     </h2>
-                    <p className="mt-2 text-2xl font-bold tracking-tight text-[#183563] sm:text-3xl">
+                    <p className="mt-2 text-2xl font-bold tracking-tight text-navy sm:text-3xl">
                         Empresas que confían en nosotros
                     </p>
                 </div>
@@ -28,12 +28,12 @@ export function Clients() {
                     {clients.map((client) => (
                         <div
                             key={client.name}
-                            className="group flex h-40 w-full items-center justify-center p-4 transition-all duration-300 cursor-default"
+                            className="group flex h-30 w-full items-center justify-center p-4 transition-all duration-300 cursor-default"
                         >
                             <img
                                 src={client.logo}
                                 alt={`Logo de ${client.name}`}
-                                className="max-h-full max-w-full object-contain filter transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110"
+                                className="max-h-full max-w-full object-contain filter transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-180"
                             />
                         </div>
                     ))}

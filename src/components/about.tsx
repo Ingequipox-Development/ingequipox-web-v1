@@ -1,4 +1,5 @@
 import { Target, Eye, ShieldCheck, CheckCircle2 } from "lucide-react"
+import { aboutImages, companyPhilosophy } from "../data/about-data"
 
 export function AboutUs() {
     return (
@@ -12,20 +13,17 @@ export function AboutUs() {
                             Quiénes Somos
                         </span>
                         <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#183563] sm:text-4xl">
-                            Ingeniería con propósito ambiental
+                            {companyPhilosophy.title}
                         </h2>
                         <p className="mt-6 text-lg leading-relaxed text-gray-600">
-                            Somos una empresa comprometida con el desarrollo sostenible y la
-                            preservación del medio ambiente, dedicada a la planificación y
-                            ejecución de proyectos que garantizan soluciones personalizadas y
-                            eficientes.
+                            {companyPhilosophy.description}
                         </p>
                     </div>
 
                     <div className="relative">
                         <div className="absolute -inset-4 rounded-3xl bg-[#183563]/5 transform rotate-2" />
                         <img
-                            src={`${import.meta.env.BASE_URL}equipo.jpeg`}
+                            src={aboutImages.mainGroupPhoto}
                             alt="Equipo de profesionales de Ingequipox"
                             className="relative rounded-3xl object-cover shadow-xl border border-gray-100"
                         />
@@ -46,8 +44,7 @@ export function AboutUs() {
                                 <h3 className="text-xl font-bold text-[#183563]">Misión</h3>
                             </div>
                             <p className="leading-relaxed text-gray-600">
-                                Proteger la vida y el medio ambiente mediante soluciones integrales
-                                de infraestructura e ingeniería enfocadas a un planeta sustentable.
+                                {companyPhilosophy.mission}
                             </p>
                         </div>
 
@@ -60,10 +57,7 @@ export function AboutUs() {
                                 <h3 className="text-xl font-bold text-[#183563]">Visión</h3>
                             </div>
                             <p className="leading-relaxed text-gray-600">
-                                Ser reconocidos como una empresa de gran calidad humana con sus
-                                clientes y colaboradores, mediante procesos definidos y
-                                estructurados, para proveer la mejor experiencia y satisfacción de
-                                nuestros clientes.
+                                {companyPhilosophy.vision}
                             </p>
                         </div>
                     </div>
@@ -79,36 +73,15 @@ export function AboutUs() {
 
                         {/* Grilla interna para alinear los 3 valores horizontalmente en pantallas grandes */}
                         <div className="grid gap-6 md:grid-cols-3">
-                            <div className="flex gap-3">
-                                <CheckCircle2 className="h-5 w-5 shrink-0 text-[#a6ce3a] mt-0.5" />
-                                <div>
-                                    <h4 className="font-semibold text-[#183563]">Compromiso</h4>
-                                    <p className="mt-1 text-sm text-gray-600 leading-relaxed">
-                                        Con los clientes, el planeta y los proyectos. Cumpliendo con
-                                        alcance, tiempo, presupuesto y calidad.
-                                    </p>
+                            {companyPhilosophy.values.map((value) => (
+                                <div key={value.id} className="flex gap-3">
+                                    <CheckCircle2 className="h-5 w-5 shrink-0 text-[#a6ce3a] mt-0.5" />
+                                    <div>
+                                        <h4 className="font-semibold text-[#183563]">{value.title}</h4>
+                                        <p className="mt-1 text-sm text-gray-600 leading-relaxed">{value.description}</p>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div className="flex gap-3">
-                                <CheckCircle2 className="h-5 w-5 shrink-0 text-[#a6ce3a] mt-0.5" />
-                                <div>
-                                    <h4 className="font-semibold text-[#183563]">Calidad</h4>
-                                    <p className="mt-1 text-sm text-gray-600 leading-relaxed">
-                                        Prestando servicios que cumplan y superen las expectativas de nuestros clientes en cada entrega.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex gap-3">
-                                <CheckCircle2 className="h-5 w-5 shrink-0 text-[#a6ce3a] mt-0.5" />
-                                <div>
-                                    <h4 className="font-semibold text-[#183563]">Diligencia</h4>
-                                    <p className="mt-1 text-sm text-gray-600 leading-relaxed">
-                                        Hacer las cosas con esmero, rapidez, eficacia y eficiencia en todos nuestros procesos operativos.
-                                    </p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
