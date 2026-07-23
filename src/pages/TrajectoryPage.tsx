@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { ArrowLeft } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import { Trajectory } from "../components/trayectory"
+import { Trajectory2 } from "../components/trayectory2"
 import { Contact } from "../components/contact"
 
 export function TrajectoryPage() {
@@ -47,6 +48,11 @@ export function TrajectoryPage() {
             <div className="py-16">
                 <Trajectory />
             </div>
+            {/*
+            <div className="py-16">
+                <Trajectory2 />
+            </div>
+            */}
 
             {/* Cierre con contacto */}
             <Contact />

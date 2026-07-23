@@ -23,7 +23,7 @@ export function SiteFooter() {
             {/* Nuevo diseño de Documento de Consulta (Adaptado al tema oscuro) */}
             <div className="mt-8 max-w-sm">
               <a
-                href={`${import.meta.env.BASE_URL}Politica_proteccion_datos_INGEQUIPOX.pdf`}
+                href={`${import.meta.env.BASE_URL}docs/SGI-PLT-012-politica_de_seguridad_de_la_informacion_y_gestion_de_incidentes_de_seguridad.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-green/50 hover:bg-white/10"
@@ -39,7 +39,31 @@ export function SiteFooter() {
                     Documento de consulta
                   </span>
                   <span className="mt-0.5 text-sm text-green transition-colors group-hover:text-[#8bd248]">
-                    Política de Protección de Datos Personales
+                    Política de seguridad de la información
+                  </span>
+                </div>
+              </a>
+            </div>
+            {/* Nuevo diseño de Documento de Consulta (Adaptado al tema oscuro) */}
+            <div className="mt-8 max-w-sm">
+              <a
+                href={`${import.meta.env.BASE_URL}docs/SGI-PLT-013-politica_de_tratamiento_de_datos_personales.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-green/50 hover:bg-white/10"
+              >
+                {/* Ícono simulando el PDF */}
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-black/20 text-green shadow-inner transition-transform duration-300 group-hover:scale-110">
+                  <FileText className="h-6 w-6" strokeWidth={1.5} />
+                </div>
+
+                {/* Textos del documento */}
+                <div className="flex flex-col">
+                  <span className="font-semibold text-white">
+                    Documento de consulta
+                  </span>
+                  <span className="mt-0.5 text-sm text-green transition-colors group-hover:text-[#8bd248]">
+                    Política de tratamiento de datos personales
                   </span>
                 </div>
               </a>

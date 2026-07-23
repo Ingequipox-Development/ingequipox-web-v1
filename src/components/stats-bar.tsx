@@ -3,7 +3,7 @@ import { Building2, Leaf, Droplets, Award } from "lucide-react"
 const stats = [
   {
     icon: Building2,
-    value: "+15 años",
+    value: "6 años",
     label: "De experiencia en el sector",
   },
   {

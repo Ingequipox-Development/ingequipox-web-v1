@@ -32,7 +32,7 @@ export const leadershipTeam = [
 
 // Imágenes generales
 export const aboutImages = {
-    mainGroupPhoto: `${import.meta.env.BASE_URL}/about/equipo.jpeg`,
+    mainGroupPhoto: `${import.meta.env.BASE_URL}/about/equipo_2026.jpg`,
     officeBackground: `${import.meta.env.BASE_URL}/about/oficina-fondo.jpg`,
 }
 
